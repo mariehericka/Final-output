@@ -418,7 +418,7 @@ img {
   border: 1px;
   align-items: center;
   width: 30rem;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .trends__card h4 {
   color: #ffa700;
@@ -465,15 +465,15 @@ img {
     flex-direction: column;
     gap: 6rem;
   }
-  .trends__title{
-    margin:0 auto;
-    width:70%;
+  .trends__title {
+    margin: 0 auto;
+    width: 70%;
   }
-  .trends__title h2{
-    font-size:4.5rem;
+  .trends__title h2 {
+    font-size: 4.5rem;
   }
-  .trends__title p{
-    margin-bottom:2rem;
+  .trends__title p {
+    margin-bottom: 2rem;
   }
 }
 /* CONTACT */
@@ -512,10 +512,10 @@ img {
 .footer ul li a i {
   color: gray;
 }
-@media screen and (max-width: 500px){
-  .footer__wrapper{
-    display:flex;
-    flex-direction:column;
+@media screen and (max-width: 500px) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* REPEATABLE PATTERNS */
@@ -535,4 +535,43 @@ img {
 }
 .btn.bg--black {
   background-color: #2b2b2b;
+}
+
+/* UPDATE BANNER */
+.update__banner {
+  padding: 10rem 0;
+  background: #ffffff;
+}
+.update__wrapper {
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+}
+.upd__banner__content h1 {
+  font-size: 6rem;
+  color: #ffa700;
+  font-weight: 700;
+}
+.upd__banner__content p {
+  margin-bottom: 7rem;
+  font-size: 2.5rem;
+}
+.update__author ul {
+  display: flex;
+  flex-direction: space-between;
+
+  gap: 5rem;
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.update__content h3 {
+  font-size: 2.7rem;
+  color: #ffa700;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.update__content p{
+  font-size:1.7rem;
+  font-weight:570;
 }
