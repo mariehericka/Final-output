@@ -127,6 +127,7 @@ img {
   background: #2b2b2b;
   position: fixed;
   width: 100%;
+  z-index:99;
 }
 .header__wrapper {
   display: flex;
@@ -146,7 +147,7 @@ img {
   font-weight: 600;
   color: #ffffff;
 }
-.branding__text h3 {
+.branding__text h2 {
   color: #ffa700;
 }
 .header__nav ul {
@@ -266,6 +267,13 @@ img {
   justify-content: center;
   gap: 3rem;
 }
+.banner__btn a:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
+  background: transparent;
+  border: 2px solid #ffa700;
+  color: #ffa700;
+}
 @media screen and (max-width: 500px) {
   .banner__wrapper {
     display: flex;
@@ -344,7 +352,7 @@ img {
 /* SERVICES BTN */
 .services__card:hover {
   scale: 1.1;
-  transition: 0.5s ease;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 500px) {
@@ -392,13 +400,13 @@ img {
 }
 @media screen and (max-width: 500px) {
   .about {
-    height: 110vh;
+    height: 130vh;
   }
   .about__wrapper {
     display: grid;
   }
   .about__content h2 {
-    margin-left: 10rem;
+    margin-left: 8rem;
   }
   .about__content p {
     margin-left: 1rem;
@@ -458,7 +466,7 @@ img {
 }
 @media screen and (max-width: 500px) {
   .trends {
-    height: 164vh;
+    height: 190vh;
   }
   .trends__content {
     display: flex;
@@ -467,7 +475,6 @@ img {
   }
   .trends__title {
     margin: 0 auto;
-    width: 70%;
   }
   .trends__title h2 {
     font-size: 4.5rem;
@@ -491,6 +498,13 @@ img {
 .contact p {
   font-size: 1.5rem;
   font-weight: 500;
+}
+.contact__wrapper a:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
+  background: transparent;
+  border: 2px solid #2b2b2b;
+  color: #2b2b2b;
 }
 /* FOOTER */
 .footer {
@@ -536,7 +550,17 @@ img {
 .btn.bg--black {
   background-color: #2b2b2b;
 }
-
+.bg--transparent {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-weight: 600;
+  border-radius: 5rem;
+  font-size: 2rem;
+  transition: 0.5 ease;
+  margin-top: 3rem;
+  border: 2px solid #2b2b2b;
+  color: #2b2b2b;
+}
 /* UPDATE BANNER */
 .update__banner {
   padding: 10rem 0;
@@ -545,6 +569,14 @@ img {
 .update__wrapper {
   display: grid;
   grid-template-columns: 2.5fr 1.5fr;
+  grid-gap: 5rem;
+}
+.update__one {
+  border-bottom: 3px solid #f6f6f6;
+  padding-bottom: 8rem;
+}
+.update__banner__img__two {
+  margin-top: 4rem;
 }
 .upd__banner__content h1 {
   font-size: 6rem;
@@ -558,7 +590,6 @@ img {
 .update__author ul {
   display: flex;
   flex-direction: space-between;
-
   gap: 5rem;
   margin: 1rem;
   font-size: 1.3rem;
@@ -571,7 +602,78 @@ img {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.update__content p{
-  font-size:1.7rem;
-  font-weight:570;
+.update__content p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.update__content a {
+  color: #ffa700;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.update__right {
+  width: 400px;
+}
+.update__right h4 {
+  font-size: 2.7rem;
+  color: #ffa700;
+  font-weight: 700;
+  padding: 1rem 2rem;
+}
+.update__categories {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-bottom: 3px solid #f6f6f6;
+  padding-bottom: 2rem;
+}
+.update__categories tr {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.5;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.recent {
+  border-bottom: 3px solid #f6f6f6;
+  padding-bottom: 2rem;
+}
+.recent__title h4 {
+  font-size: 3rem;
+  margin: 4rem;
+}
+.recent__content {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+}
+.recent__details {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.recent__details h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.tags__title h4 {
+  font-size: 3rem;
+  padding: 3rem;
+}
+.bg--transparent:hover {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+/* CONTACT */
+.contact{
+  background:#2b2b2b;
+  padding-top:5rem;
+  height:100vh;
+}
+.contact__title{
+  color:#ffffff;
+  padding:6rem;
+  justify-content:space-between;
 }
